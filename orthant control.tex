@@ -1,0 +1,81 @@
+\include{header}
+
+\begin{document}
+ \title{Orthant controllability theorems and pure state control}
+\author{Uther Shackerley-Bennett}
+\maketitle
+
+\abstract{Pure state control is control on an open convex cone in a linear vector space. This can be seen most clearly in the covariance matrix determination of Gaussian states. The field of cone control is active and hence we attempt to translate some of the discovered theorems over to conditions on our symeplectic algebra generators.}
+
+\tableofcontents
+
+\section{Physical background}
+From Lerner, $\operatorname{Sp}(2n,\mathbb{R}) \cong \operatorname{U}(n)\times \operatorname{Sp}_+(2n,\mathbb{R})$, where $\operatorname{Sp}_+(2n,\mathbb{R}) = \operatorname{Sp}(2n,\mathbb{R}) \cap \{\text{symmetric positive definite matrices}\}$. The isotropy group of the pure Gaussian states is $\operatorname{U}(n)$ and therefore the manifold of pure Gaussian states is diffeomorphic to $\operatorname{Sp}_+(2n,\mathbb{R})$. This corresponds to the set of pure covariance matrices. We know that $\operatorname{Sp}_+(2n,\mathbb{R})$ is diffeomorphic to the open convex cone $\operatorname{Sym}(n,\mathbb{R}) \times \operatorname{Sym}_+(n,\mathbb{R}) \subset \operatorname{Sym}(n,\mathbb{R}) \times \operatorname{Sym}(n,\mathbb{R})$. (Just as an aside, note that this open cone is diffeomorphic to the whole space). To visualise its form it is $n(n+1)$-dimensional wedge in $\mathbb{R}^{n(n+1)}$.
+
+We are just dealing with vector spaces and so we look for control theorems on open convex cones in $\mathbb{R}^n$.
+
+Note that in the following theorems these conditions will be one matrices that are defined to act on our covariance matrices, seen as vectors in a vector space. It will then be necessary to translate these conditions into condition on Lie algebra generators.
+
+\section{Control theorems}
+The control theorems below are for positive orthants whereas our cone is a wedge where it is positive in some dimensions but free in others. This may or may not cause problems below.
+
+\subsection{Notation}
+\begin{definition}
+ $\mathbb{R}_+^n := \{x \in \mathbb{R}^n | x \geq 0\}$. $\mathring{\mathbb{R}}_+^n$ is the interior of this set.
+\end{definition}
+
+\begin{definition}
+ $A \trianglelefteq 0$ if $j \neq i$, $A_{ij} \geq 0$.
+\end{definition}
+
+\begin{equation}
+ \dot{x} = \left(A+\sum_{i=1}^mu_iB_i\right)x \label{eq:conecont}
+\end{equation}
+where $x \in \mathbb{R}^n$, $u$ unbounded.
+
+\begin{proposition}
+ If $\Omega = \mathbb{R}$ a necessary and sufficient condition for (\ref{eq:conecont}) to be a
+positive bilinear system is that $A \trianglelefteq 0$ and $B$ is diagonal; if $\Omega = [0, 1]$ then the condition is: the off-diagonal elements of $B$ are nonnegative. \label{thm:nsposbil}
+\end{proposition}
+Note that this the words are taken fomr Elliott but are general for all systems.
+
+\subsection{Boothby1982}
+$m=1$, $n=n$.
+
+\begin{theorem}[Boothby] Suppose the real matrices $A$, $B$ satisfy $A \trianglelefteq 0$ and $B = \operatorname{diag}(\beta_1 , \ldots , \beta_n )$. If there exists a vector $p \geq 0$ such that
+ \begin{enumerate}
+  \item $\sum_{i=1}^np_i\beta_i = 0 \text{ and}$
+\item $\sum_{i=1}^np_iA_{ii} \geq 0,$
+ \end{enumerate}
+then (\ref{eq:conecont}) is not controllable on $\mathring{\mathbb{R}}_+^n$.
+\end{theorem}
+
+\subsection{Boothby from Sachkov}
+There are results for $m=1$ for system \ref{eq:conecont}, possibly same as above
+
+\subsection{Extreme codimensions solved}
+
+\subsubsection{Boothby from Sachkov}
+$m=n$. System \ref{eq:conecont} is controllable.
+
+\subsubsection{Bacciotti}
+$m=1$, $n=2$ (system \ref{eq:conecont}) totally solved by Bacciotti.
+
+\subsubsection{Sachkov1995, from his 1997 paper}
+$m=1$ $n>2$. System \ref{eq:conecont} is generically (\textbf{obviously something to look our for}) uncontrollable.
+
+\subsubsection{Relation of the above to codimension}
+``So the problem was solved for extreme codimensions $0$ and $n-1$.''
+
+Codimension 0 is just $m=n$. Done by Boothby.
+
+Codimension $n-1$ is a case either where $m=1$ and $n>m$ (Done by Sachkov1995) or where $m = 2n - 1$ (violates linear independence of diagonal $B$s).
+
+We assume $m < n$ so that the diagonal $B$ matrices can be linearly independent.
+
+\subsection{Sachkov1997}
+Propose solution for systems of codimension 1 and 2 ($m=n-1$ and $m=n-2$). Sufficient conditions for $m \leq n-2$.
+
+\section{Translation into symplectic Lie algebra generator conditions}
+
+\end{document}

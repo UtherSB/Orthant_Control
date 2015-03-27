@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Physical background}{2}{section.1}
+\contentsline {section}{\numberline {2}Control theorems}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Notation}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Boothby1982}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Boothby from Sachkov}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Extreme codimensions solved}{3}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Boothby from Sachkov}{3}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Bacciotti}{3}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Sachkov1995, from his 1997 paper}{3}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Relation of the above to codimension}{3}{subsubsection.2.4.4}
+\contentsline {subsection}{\numberline {2.5}Sachkov1997}{3}{subsection.2.5}
+\contentsline {section}{\numberline {3}Translation into symplectic Lie algebra generator conditions}{4}{section.3}
